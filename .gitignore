@@ -1,7 +1,7 @@
 .DS_Store
 *.swp
 *.pyc
-
+.idea
 
 # 客户文件，带 token 不上传
 client

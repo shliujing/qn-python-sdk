@@ -22,7 +22,7 @@ secret_key = os.getenv('QINIU_SECRET_KEY')
 bucket_name = os.getenv('QINIU_TEST_BUCKET')
 
 # 上传到七牛后保存的文件名
-key = 'test/testxx-181128.png'
+key = 'crawler/testxx-181128.png'
 
 # 要上传文件的本地路径
 localfile = '/Users/jingliu/Desktop/what-is-python..png'

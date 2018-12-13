@@ -10,7 +10,7 @@ secret_key = os.getenv('QINIU_SECRET_KEY')
 q = Auth(access_key, secret_key)
 
 # 要转码的文件所在的空间和文件名。
-bucket = '28-test'
+bucket = '28-crawler'
 key = '4k.mp4'
 
 # 转码是使用的队列名称。

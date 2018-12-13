@@ -80,11 +80,11 @@ class UtilsTest(unittest.TestCase):
 
 class AuthTestCase(unittest.TestCase):
     def test_token(self):
-        token = dummy_auth.token('test')
+        token = dummy_auth.token('crawler')
         assert token == 'abcdefghklmnopq:mSNBTR7uS2crJsyFr2Amwv1LaYg='
 
     def test_token_with_data(self):
-        token = dummy_auth.token_with_data('test')
+        token = dummy_auth.token_with_data('crawler')
         assert token == 'abcdefghklmnopq:-jP8eEV9v48MkYiBGs81aDxl60E=:dGVzdA=='
 
     def test_noKey(self):
@@ -94,14 +94,14 @@ class AuthTestCase(unittest.TestCase):
             Auth('', '').token('nokey')
 
     def test_token_of_request(self):
-        token = dummy_auth.token_of_request('http://www.qiniu.com?go=1', 'test', '')
+        token = dummy_auth.token_of_request('http://www.qiniu.com?go=1', 'crawler', '')
         assert token == 'abcdefghklmnopq:cFyRVoWrE3IugPIMP5YJFTO-O-Y='
-        token = dummy_auth.token_of_request('http://www.qiniu.com?go=1', 'test', 'application/x-www-form-urlencoded')
+        token = dummy_auth.token_of_request('http://www.qiniu.com?go=1', 'crawler', 'application/x-www-form-urlencoded')
         assert token == 'abcdefghklmnopq:svWRNcacOE-YMsc70nuIYdaa1e4='
 
     def test_verify_callback(self):
         body = 'name=sunflower.jpg&hash=Fn6qeQi4VDLQ347NiRm-RlQx_4O2&location=Shanghai&price=1500.00&uid=123'
-        url = 'test.qiniu.com/callback'
+        url = 'crawler.qiniu.com/callback'
         ok = dummy_auth.verify_callback('QBox abcdefghklmnopq:ZWyeM5ljWMRFwuPTPOwQ4RwSto4=', url, body)
         assert ok
 

@@ -15,7 +15,7 @@ secret_key = os.getenv('QINIU_SECRET_KEY')
 q = Auth(access_key, secret_key)
 
 # 生成私有 url
-url = 'http://test-private.iamlj.com/1.png'
+url = 'http://crawler-private.iamlj.com/1.png'
 time = 3600
 # 打印
 private_url = q.private_download_url(url, time)

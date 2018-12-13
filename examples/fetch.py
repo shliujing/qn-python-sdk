@@ -13,9 +13,9 @@ q = Auth(access_key, secret_key)
 
 bucket = BucketManager(q)
 
-url = 'http://aaa.example.com/test.jpg'
+url = 'http://aaa.example.com/crawler.jpg'
 
-key = 'test.jpg'
+key = 'crawler.jpg'
 
 ret, info = bucket.fetch(url, bucket_name, key)
 print(info)

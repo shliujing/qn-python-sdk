@@ -13,11 +13,11 @@ access_key = os.getenv('QINIU_ACCESS_KEY')
 secret_key = os.getenv('QINIU_SECRET_KEY')
 q = Auth(access_key, secret_key)
 
-bucket = 'test-pub'
-key = 'test/radius22.png'
-host = 'http://test-pub.iamlj.com/'
-url_with_http_param = 'http://test-pub.iamlj.com/1.png?roundPic/radius/50'
-url_with_param = 'test-pub.iamlj.com/1.png?roundPic/radius/50'
+bucket = 'crawler-pub'
+key = 'crawler/radius22.png'
+host = 'http://crawler-pub.iamlj.com/'
+url_with_http_param = 'http://crawler-pub.iamlj.com/1.png?roundPic/radius/50'
+url_with_param = 'crawler-pub.iamlj.com/1.png?roundPic/radius/50'
 encoded_entry_uri = urlsafe_base64_encode(bucket + ':' + key)
 signing_str = url_with_param + '|saveas/' + encoded_entry_uri
 

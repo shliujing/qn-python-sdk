@@ -20,7 +20,7 @@ cdn_manager = CdnManager(auth)
 log_date = '2018-08-21'
 
 urls = [
-    'test-pub.iamlj.com'
+    'crawler-pub.iamlj.com'
 ]
 
 

@@ -34,7 +34,7 @@ ret1, info1 = put_file(token, key0, lf)
 pipeline = "test1"
 key = 'index.txt'
 fops = 'mkzip/4'
-saveas_key = qiniu.urlsafe_base64_encode('lllllll:test-mkzip.zip')
+saveas_key = qiniu.urlsafe_base64_encode('lllllll:crawler-mkzip.zip')
 fops = fops+'|saveas/'+saveas_key
 
 #fops = 'bucket='+bucket+'&key='+key+'&fops='+fops+'|saveas/'+saveas_key

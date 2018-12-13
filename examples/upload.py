@@ -16,7 +16,7 @@ bucket_name = os.getenv('QINIU_TEST_BUCKET')
 q = Auth(access_key, secret_key)
 
 # 上传到七牛后保存的文件名
-key = 'test/testxx1120.png'
+key = 'crawler/testxx1120.png'
 
 # 生成上传 Token，可以指定过期时间等
 token = q.upload_token(bucket_name, key, 3600)

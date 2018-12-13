@@ -11,7 +11,7 @@ q = Auth(access_key, secret_key)
 
 bucket_name = os.getenv('QINIU_TEST_BUCKET')
 
-key = 'test-desktop.png'
+key = 'crawler-desktop.png'
 
 #上传文件到七牛后， 七牛将文件名和文件大小回调给业务服务器。
 policy = {
@@ -21,7 +21,7 @@ policy = {
 
 token = q.upload_token(bucket_name, key, 3600, policy)
 
-localfile = '/Users/jingliu/Desktop/test-desktop.png'
+localfile = '/Users/jingliu/Desktop/crawler-desktop.png'
 
 ret, info = put_file(token, key, localfile)
 print(info)

@@ -12,8 +12,8 @@ secret_key = os.getenv('QINIU_SECRET_KEY')
 q = Auth(access_key, secret_key)
 
 # 你要测试的空间， 并且这个key在你空间中存在
-bucket_name = 'test-pub'
-key = 'mov/test.mov'
+bucket_name = 'crawler-pub'
+key = 'mov/crawler.mov'
 
 # 指定转码使用的队列名称
 pipeline = '12349'
@@ -22,7 +22,7 @@ pipeline = '12349'
 fops = 'avthumb/mp4/ab/128k/ar/22050/acodec/libfaac/r/30/vb/300k/vcodec/libx264/s/320x240/autoscale/1/stripmeta/0'
 
 # 通过添加'|saveas'参数，指定处理后的文件保存的bucket和key，不指定默认保存在当前空间，bucket_saved为目标bucket，bucket_saved为目标key
-saveas_key = urlsafe_base64_encode('test-pub:test-after.mov')
+saveas_key = urlsafe_base64_encode('crawler-pub:crawler-after.mov')
 
 fops = fops+'|saveas/'+saveas_key
 

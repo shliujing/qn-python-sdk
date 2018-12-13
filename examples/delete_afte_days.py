@@ -15,7 +15,7 @@ bucket = BucketManager(q)
 
 # 你要测试的空间， 并且这个key在你空间中存在
 bucket_name = 'Bucket_Name'
-key = 'python-test.png'
+key = 'python-crawler.png'
 
 # 您要更新的生命周期，单位为天
 days = '5'

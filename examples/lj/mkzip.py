@@ -15,7 +15,7 @@ q = Auth(access_key, secret_key)
 pipeline = "12349214"
 key = 'mkzip/mkzip-4-index.txt'
 fops = 'mkzip/4'
-zipKey = 'test/test100911.zip';
+zipKey = 'crawler/test100911.zip';
 
 saveas_key = qiniu.urlsafe_base64_encode(bucket+':'+zipKey)
 fops = fops+'|saveas/'+saveas_key

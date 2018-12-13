@@ -21,7 +21,7 @@ q = Auth(access_key, secret_key)
 bucket = BucketManager(q)
 
 # 要拉取的文件名
-key = 'test.jpg'
+key = 'crawler.jpg'
 
 ret, info = bucket.prefetch(bucket_name, key)
 print(info)

@@ -2,6 +2,9 @@
 
 七牛 sdk 的笔记在`README_Qiniu.md`
 
+client 文件夹是给客户测试的，包含客户信息。放本地，不上传。
+
+
 ## 已调试 demo
 
 - cdn_log.py
@@ -68,3 +71,8 @@
 /Users/jingliu/lj-local/code/qiniu-sdk/python-sdk-7.2.0/examples/lj/homework/private_url.py
 
 ![](http://i.iamlj.com/18-11-30/47206653.jpg)
+
+## OCR
+
+
+![](http://i.iamlj.com/18-12-20/49999442.jpg)

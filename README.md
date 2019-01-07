@@ -74,5 +74,6 @@ client 文件夹是给客户测试的，包含客户信息。放本地，不上�
 
 ## OCR
 
+[demo](https://github.com/shliujing/qn-python-sdk/blob/master/examples/lj/ai/ocr_idcard.py)
 
 ![](http://i.iamlj.com/18-12-20/49999442.jpg)

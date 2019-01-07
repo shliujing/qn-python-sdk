@@ -22,7 +22,7 @@ key = 'crawler/testxx1120.png'
 token = q.upload_token(bucket_name, key, 3600)
 
 # 要上传文件的本地路径
-localfile = '/Users/jingliu/Desktop/1.png'
+localfile = '/Users/jingliu/Desktop/1231.png'
 
 ret, info = put_file(token, key, localfile)
 print(ret)
